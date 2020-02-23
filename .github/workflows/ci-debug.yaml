@@ -32,3 +32,8 @@ jobs:
         shell: bash -l {0}
         run: |
           python3 -m pip install -vvv --src $GITHUB_WORKSPACE/../vcs_pkgs/ --editable "hg+https://bitbucket.org/salishsea/tools#egg=SalishSeaTools&subdirectory=SalishSeaTools"
+
+      - name: Import package
+        shell: bash -l {0}
+        run: |
+          python3 -c "import salishsea_tools"
