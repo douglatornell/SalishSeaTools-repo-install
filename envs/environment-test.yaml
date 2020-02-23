@@ -1,0 +1,36 @@
+# conda environment description file for CI debugging testing environment
+#
+# Creates a conda environment in which the SalishSeaTools is installed as an editable
+# package from a clone of its Bitbucket Mercurial repo
+
+name: debug-test
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+- arrow
+- basemap
+- bottleneck
+- cliff
+- cmocean
+- gsw
+- lxml
+- matplotlib
+- netCDF4
+- numpy
+- pandas
+- pip
+- progressbar
+- pytz
+- python-dateutil
+- pyyaml
+- requests
+- retrying
+- scipy
+- xarray
+- zeep
+
+- pip:
+  - angles
